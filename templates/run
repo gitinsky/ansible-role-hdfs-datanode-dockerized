@@ -1,6 +1,0 @@
-#!/bin/sh
-set -e
-JAVA_HOME=/jdk1.8.0_40/
-export JAVA_HOME
-chown -R hadoop:hadoop /var/hadoop
-exec sudo -E -u hadoop /hadoop/bin/hdfs datanode 1>>/var/log/hdfs-datanode.log 2>&1
